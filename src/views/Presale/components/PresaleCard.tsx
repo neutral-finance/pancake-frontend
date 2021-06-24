@@ -35,7 +35,7 @@ const Actions = styled.div`
   margin-top: 24px;
 `
 
-const FarmedStakingCard = () => {
+const PresaleCard = () => {
   const [pendingTx, setPendingTx] = useState(false)
   const { account } = useWeb3React()
   const { t } = useTranslation()
@@ -62,15 +62,11 @@ const FarmedStakingCard = () => {
     <StyledFarmStakingCard>
       <CardBody>
         <Heading scale="xl" mb="24px">
-          {t('Farms & Staking')}
+          {t('Presale')}
         </Heading>
         <CardImage src="/logo.png" alt="cake logo" width={64} height={64} />
         <Block>
-          <Label>{t('CAKE to Harvest')}:</Label>
-          <CakeHarvestBalance farmsWithBalance={balancesWithValue} />
-        </Block>
-        <Block>
-          <Label>{t('CAKE in Wallet')}:</Label>
+          <Label>{t('CHEFSHIBA in Wallet')}:</Label>
           <CakeWalletBalance />
         </Block>
         <Actions>
@@ -96,4 +92,4 @@ const FarmedStakingCard = () => {
   )
 }
 
-export default FarmedStakingCard
+export default PresaleCard

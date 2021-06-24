@@ -9,7 +9,7 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
   },
   {
     label: t('Presale'),
-    icon: 'FarmIcon',
+    icon: 'IfoIcon',
     href: '/presale',
   },
   {

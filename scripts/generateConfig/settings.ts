@@ -13,6 +13,11 @@ const settings: SettingsObject[] = [
     type: SettingsType.POOL,
   },
   {
+    name: 'presale',
+    url: `${BASE_URL}/presale`,
+    type: SettingsType.POOL,
+  },
+  {
     name: 'farms',
     url: `${BASE_URL}/farms`,
     type: SettingsType.FARM,
