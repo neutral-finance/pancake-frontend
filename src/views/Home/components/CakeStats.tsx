@@ -33,16 +33,12 @@ const CakeStats = () => {
           {t('Cake Stats')}
         </Heading>
         <Row>
-          <Text fontSize="14px">{t('Total CAKE Supply')}</Text>
-          {cakeSupply && <CardValue fontSize="14px" value={cakeSupply} />}
+          <Text fontSize="14px">{t('Total CHEFSHIB Supply')}</Text>
+          {cakeSupply && <CardValue fontSize="14px" value={1000000000000000} />}
         </Row>
         <Row>
-          <Text fontSize="14px">{t('Total CAKE Burned')}</Text>
-          <CardValue fontSize="14px" decimals={0} value={burnedBalance} />
-        </Row>
-        <Row>
-          <Text fontSize="14px">{t('New CAKE/block')}</Text>
-          <CardValue fontSize="14px" decimals={0} value={20} />
+          <Text fontSize="14px">{t('Total CHEFSHIB Burned')}</Text>
+          <CardValue fontSize="14px" decimals={0} value={0} />
         </Row>
       </CardBody>
     </StyledCakeStats>
